@@ -1,0 +1,5 @@
+jQuery plugin for basic tab functionality
+
+Call on the parent(s) containing both tabs and tab-containers.
+
+Adds the class "current" to both tab and container, style as you like.
