@@ -3,3 +3,35 @@ jQuery plugin for basic tab functionality
 Call on the parent(s) containing both tabs and tab-containers.
 
 Adds the class "current" to both tab and container, style as you like.
+
+
+Example:
+
+<section id="example">
+	<ul class="tabs">
+		<li><a href="page1.html">Tab 1</a></li>
+		<li><a href="page2.html">Tab 2</a></li>
+	</ul>
+	<div class="tab-containers">
+		<article>Container 1</article>
+		<article>Container 2</article>
+	</div>
+</section>
+
+<script>
+$(function() {
+	
+	// initiate tabs
+	$('#example').tabify();
+
+});
+</script>
+
+<style>
+.tab-containers article {
+	display: none;
+}
+.tab-containers .current {
+	display: block;
+}
+</style>
